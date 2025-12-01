@@ -162,3 +162,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
     android.hardware.drm-service.clearkey
+
+# Fastboot
+PRODUCT_PACKAGES += \
+    android.hardware.fastboot-service.example_recovery \
+    fastbootd
+
