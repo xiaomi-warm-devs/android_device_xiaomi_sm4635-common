@@ -252,9 +252,6 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     CarrierConfig \
     FrameworksResXiaomi \
-    FrameworksResWarm \
-    SettingsOverlayWarm \
-    SystemUIResWarm \
     SettingsResXiaomi \
     TelephonyResCommon \
     WifiResCommon \
