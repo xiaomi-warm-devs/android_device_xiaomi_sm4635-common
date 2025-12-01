@@ -45,6 +45,9 @@ TARGET_SCREEN_DENSITY := 320
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := pitti
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
