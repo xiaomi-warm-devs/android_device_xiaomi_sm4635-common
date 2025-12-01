@@ -6,6 +6,11 @@
 
 COMMON_PATH := device/xiaomi/sm4635-common
 
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+TARGET_GRALLOC_HANDLE_HAS_UBWCP_FORMAT := true
+SELINUX_IGNORE_NEVERALLOWS := true
+
 # A/B
 AB_OTA_UPDATER := true
 
@@ -137,16 +142,16 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := pitti
 
 # Properties
-TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/properties/product.prop
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/properties/system.prop
-TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/properties/system_ext.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
+TARGET_ODM_PROP += $(COMMON_PATH)/properties/odm.prop
+TARGET_PRODUCT_PROP += $(COMMON_PATH)/properties/product.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/properties/system.prop
+TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/properties/system_ext.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/properties/vendor.prop
 
 # Recovery
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/recovery.fstab
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/recovery.fstab
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
@@ -162,21 +167,21 @@ VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
 # VINTF
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    $(DEVICE_PATH)/hidl/compatibility_matrix.device.xml \
-    $(DEVICE_PATH)/hidl/compatibility_matrix.xiaomi.xml \
+    $(COMMON_PATH)/hidl/compatibility_matrix.device.xml \
+    $(COMMON_PATH)/hidl/compatibility_matrix.xiaomi.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     hardware/lineage/interfaces/compatibility_matrices/compatibility_matrix.lineage.xml
 
 DEVICE_FRAMEWORK_MANIFEST_FILE += \
-    $(DEVICE_PATH)/hidl/framework_manifest.xml
+    $(COMMON_PATH)/hidl/framework_manifest.xml
 
 DEVICE_MATRIX_FILE := \
-    $(DEVICE_PATH)/hidl/compatibility_matrix.xml \
+    $(COMMON_PATH)/hidl/compatibility_matrix.xml \
     hardware/qcom-caf/common/compatibility_matrix.xml
 
 DEVICE_MANIFEST_FILE += \
-    $(DEVICE_PATH)/hidl/manifest_pitti.xml \
-    $(DEVICE_PATH)/media/c2_manifest_vendor.xml \
+    $(COMMON_PATH)/hidl/manifest_pitti.xml \
+    $(COMMON_PATH)/media/c2_manifest_vendor.xml \
     hardware/qcom-caf/sm8650/audio/primary-hal/configs/common/manifest_non_qmaa.xml \
     hardware/qcom-caf/sm8650/audio/primary-hal/configs/common/manifest_non_qmaa_extn.xml
 
