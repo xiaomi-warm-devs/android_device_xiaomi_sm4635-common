@@ -1,11 +1,2 @@
-# Bluetooth
-bluetooth.device.default_name=Poco C75 5G
-
-# Marketname
-ro.product.marketname=Poco C75 5G
-
 # Qti
 ro.vendor.qti.va_odm.support=1
-
-# USB
-vendor.usb.product_string=Poco C75 5G
