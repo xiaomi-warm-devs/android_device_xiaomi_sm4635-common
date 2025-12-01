@@ -24,6 +24,10 @@ persist.vendor.sensors.enable.mag_filter=true
 # SSR
 persist.vendor.ssr.enable_ramdumps=1
 
+# WiFi display
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0
+
 # WLAN
 ro.hardware.wlan.chip=adrastea
 ro.hardware.wlan.dbs=2
