@@ -129,6 +129,26 @@ include device/qcom/sepolicy_vndr/SEPolicy.mk
 BOOT_SECURITY_PATCH := 2025-11-01
 VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
+# VINTF
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(DEVICE_PATH)/hidl/compatibility_matrix.device.xml \
+    $(DEVICE_PATH)/hidl/compatibility_matrix.xiaomi.xml \
+    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
+    hardware/lineage/interfaces/compatibility_matrices/compatibility_matrix.lineage.xml
+
+DEVICE_FRAMEWORK_MANIFEST_FILE += \
+    $(DEVICE_PATH)/hidl/framework_manifest.xml
+
+DEVICE_MATRIX_FILE := \
+    $(DEVICE_PATH)/hidl/compatibility_matrix.xml \
+    hardware/qcom-caf/common/compatibility_matrix.xml
+
+DEVICE_MANIFEST_FILE += \
+    $(DEVICE_PATH)/hidl/manifest_pitti.xml \
+    $(DEVICE_PATH)/media/c2_manifest_vendor.xml \
+    hardware/qcom-caf/sm8650/audio/primary-hal/configs/common/manifest_non_qmaa.xml \
+    hardware/qcom-caf/sm8650/audio/primary-hal/configs/common/manifest_non_qmaa_extn.xml
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
