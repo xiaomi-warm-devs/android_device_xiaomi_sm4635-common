@@ -196,6 +196,10 @@ on post-fs-data
     on property:sys.tp.grip_enable=270
     write /proc/tp_grip_area 270
 
+    # Xiaomi touch
+    chown system system /dev/xiaomi-touch
+    chmod 0660 /dev/xiaomi-touch
+
 on property:vendor.display.lcd_density=560
    setprop dalvik.vm.heapgrowthlimit 256m
 
