@@ -170,20 +170,20 @@ VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
 # VINTF
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    $(COMMON_PATH)/hidl/compatibility_matrix.device.xml \
-    $(COMMON_PATH)/hidl/compatibility_matrix.xiaomi.xml \
+    $(COMMON_PATH)/configs/hidl/compatibility_matrix.device.xml \
+    $(COMMON_PATH)/configs/hidl/compatibility_matrix.xiaomi.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     hardware/lineage/interfaces/compatibility_matrices/compatibility_matrix.lineage.xml
 
 DEVICE_FRAMEWORK_MANIFEST_FILE += \
-    $(COMMON_PATH)/hidl/framework_manifest.xml
+    $(COMMON_PATH)/configs/hidl/framework_manifest.xml
 
 DEVICE_MATRIX_FILE := \
-    $(COMMON_PATH)/hidl/compatibility_matrix.xml \
+    $(COMMON_PATH)/configs/hidl/compatibility_matrix.xml \
     hardware/qcom-caf/common/compatibility_matrix.xml
 
 DEVICE_MANIFEST_FILE += \
-    $(COMMON_PATH)/hidl/manifest_pitti.xml \
+    $(COMMON_PATH)/configs/hidl/manifest_pitti.xml \
     $(COMMON_PATH)/configs/media/c2_manifest_vendor.xml \
     hardware/qcom-caf/sm8650/audio/primary-hal/configs/common/manifest_non_qmaa.xml \
     hardware/qcom-caf/sm8650/audio/primary-hal/configs/common/manifest_non_qmaa_extn.xml
