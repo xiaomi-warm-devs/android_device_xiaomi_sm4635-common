@@ -217,6 +217,10 @@ on charger
     write /sys/kernel/cnss/charger_mode 1
     setprop persist.sys.offlinelog.poweroff_charger_log true
 
+on property:vendor.post_boot.parsed=1
+    # Set default thermal profile
+    write /sys/class/thermal/thermal_message/sconfig 0
+
 #service vendor.lowi /vendor/bin/sscrpcd
 #   class core
 #   user system
