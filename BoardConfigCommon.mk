@@ -184,7 +184,7 @@ DEVICE_MATRIX_FILE := \
 
 DEVICE_MANIFEST_FILE += \
     $(COMMON_PATH)/hidl/manifest_pitti.xml \
-    $(COMMON_PATH)/media/c2_manifest_vendor.xml \
+    $(COMMON_PATH)/configs/media/c2_manifest_vendor.xml \
     hardware/qcom-caf/sm8650/audio/primary-hal/configs/common/manifest_non_qmaa.xml \
     hardware/qcom-caf/sm8650/audio/primary-hal/configs/common/manifest_non_qmaa_extn.xml
 
