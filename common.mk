@@ -52,3 +52,7 @@ PRODUCT_PACKAGES += \
     otapreopt_script
 
 PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
+
+# ANT+
+PRODUCT_PACKAGES += \
+    com.dsi.ant@1.0.vendor
