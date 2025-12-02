@@ -8,7 +8,7 @@
 $(call inherit-product, vendor/xiaomi/sm4635-common/sm4635-common-vendor.mk)
 
 # Enable virtual AB with vendor ramdisk
-$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/vabc_features.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 
 # Enable project quotas and casefolding for emulated storage without sdcardfs.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
