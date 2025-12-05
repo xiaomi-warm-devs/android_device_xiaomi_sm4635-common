@@ -82,7 +82,6 @@ PRODUCT_PACKAGES += \
     libagmclient \
     libbatterylistener \
     libaudiochargerlistener \
-    libpalclient \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
@@ -91,20 +90,7 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     libhfp_pal \
     libfmpal \
-    vendor.qti.hardware.AGMIPC@1.0 \
-    vendor.qti.hardware.AGMIPC@1.0-impl \
-    vendor.qti.audio-adsprpc-service.rc \
-    sound_trigger.primary.pitti
-
-PRODUCT_PACKAGES += \
-    libar-acdb \
-    libar-gpr \
-    libar-gsl \
-    libats \
-    libcustomva_intf \
-    libhotword_intf \
-    liblx-ar_util \
-    liblx-osal
+    vendor.qti.audio-adsprpc-service.rc
 
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8650/audio/primary-hal
 
