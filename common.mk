@@ -90,7 +90,8 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     libhfp_pal \
     libfmpal \
-    vendor.qti.audio-adsprpc-service.rc
+    vendor.qti.audio-adsprpc-service.rc \
+    sound_trigger.primary.pitti
 
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8650/audio/primary-hal
 
